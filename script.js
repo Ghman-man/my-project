@@ -1,7 +1,11 @@
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('#navbar');
+const hambuger = document.getElementById('menu-icon');
+const links = document.querySelector('.nav-links');
 
-menu.onclick = () => {
-  menu.classList.toggle('fa-house');
-  navbar.classList.toggle('active');
-};
+hambuger.addEventListener('click', () => {
+  links.classList.toggle('nav-active');
+  links.style.display = 'flex';
+  links.style.flexDirection = 'column';
+  
+
+});
+
